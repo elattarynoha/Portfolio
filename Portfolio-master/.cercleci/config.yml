@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:16   # Utilisation d'une image Docker avec Node.js
+    steps:
+      - checkout  # Récupère le code de ton dépôt
+      - run:
+          name: Install dependencies
+          command: npm install   # Installe les dépendances
+      - run:
+          name: Build React app
+          command: npm run build   # Compile ton projet React
+      - run:
+          name: Install Firebase CLI
+          command: npm install -g firebase-tools  # Installe Firebase CLI
+      - run:
+          name: Deploy to Firebase
+          command: firebase deploy --token $FIREBASE_TOKEN   # Déploie avec le token d'authentification
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build  # Lance le job de build
