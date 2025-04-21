@@ -23,4 +23,4 @@ workflows:
   version: 2
   deploy:
     jobs:
-      - build  # Lance le job de build
+      - build  # lancer le job

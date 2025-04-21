@@ -1,0 +1,16 @@
+{
+    "git.autorefresh": true,
+    "git.blame.statusBarItem.enabled": true,
+    "git.confirmForcePush": true,
+    "git.decorations.enabled": true,
+    "git.enabled": false,
+    "explorer.excludeGitIgnore": false,
+    "git.allowForcePush": false,
+    "git.alwaysShowStagedChangesResourceGroup": false,
+    "git.autoStash": false,
+    "git.blame.editorDecoration.enabled": false,
+    "git.branchRandomName.enable": false,
+    "git.closeDiffOnOperation": false,
+    "git.enableCommitSigning": false,
+    "git.enableSmartCommit": false
+}
